@@ -29,3 +29,109 @@ int main()
     int size=sizeof(a);//in bytes size
     cout<<"size of a is :"<<size<<endl;
 }
+#typecasting
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a='a';
+    cout<<a<<endl;
+    char b=98;
+    cout<<b<<endl;
+  
+}
+#operators
+when ever a int/int=int
+float/int=float
+double/int=double
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << 4.6 / 2 << endl;  // Output: 2.0
+    return 0;
+}
+
+#The << operator in C++ is used with cout to print multiple things sequentially.
+When you chain << operators, it simply prints one after the other in the same line without any space between them (unless you add spaces explicitly).
+In this case, "chef" is printed first, followed immediately by "forces", resulting in chefforces being printed to the console
+
+cout << "chef" << " " << "forces";
+chefforces
+#print 5 5
+cout<<5<<" "<<5;
+
+##cin Skips Spaces, Tabs, and Enter (Newline):
+#include <iostream>
+using namespace std;
+
+int main() {
+    string word;
+    cin >> word;  // Input: "Hello World"
+    cout << word; // Output: "Hello"
+    return 0;
+}
+
+##getline() Function:
+To capture input including spaces or until a newline (Enter), you can use getline(). It reads the entire line of input, including spaces and tabs
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string input;
+    getline(cin, input);  // Reads a full line including spaces
+    cout << input;
+    return 0;
+}
+##Reading Character by Character (cin.get()):
+If you want to read input one character at a time, including spaces, tabs, and newlines, you can use cin.get(). It doesn’t skip any whitespace characters.
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    while (cin.get(ch)) {  // Reads characters one by one
+        cout << ch;        // Outputs the character
+        if (ch == '\n')    // Stops when Enter (newline) is pressed
+            break;
+    }
+    return 0;
+}
+##Summary of Differences:
+getline() reads the entire line including spaces.
+cin.get() reads one character at a time or reads input into a buffer based on your control, and it does not discard spaces or newlines unless instructed.
+
+
+// check whether the number is positive,negative or zero
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin>>a;
+    if(a>0)
+    {
+        cout<<"the number is positive"<<endl;
+    }
+    else if(a<0)
+    {
+        cout<<"the number is negative"<<endl;
+    }
+    else
+    {
+        cout<<"the number is zero"<<endl;
+    }
+}
+
+##
+
+
+
+
+
