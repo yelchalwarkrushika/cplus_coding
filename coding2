@@ -20,3 +20,427 @@ int main()
         i=i+1;
     }
 }
+
+// A
+// BC
+// CDE
+// DEFG
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+        int j=1;
+        while(j<=i)
+        {
+            char ch='A'+i+j-2;
+            cout<<ch;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+}
+
+// D
+// CD
+// BCD
+// ABCD
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+
+        int j=1;
+        while(j<=i)
+        {
+            char ch='A'+n-i+j-1;
+            cout<<ch;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+}
+
+// ABC
+// BCD
+// CDE
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+
+        int j=1;
+        while(j<=n)
+        {
+            char ch='A'+i+j-2;
+            cout<<ch;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+}
+
+//   *
+//   **
+//  ***
+// ****
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+
+        int space=n-i;
+
+        while(space)
+        {
+            cout<<" ";
+            space--;
+        }
+        int j=1;
+        while(j<=i)
+        {
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+}
+
+// ****
+// *** 
+// **  
+// *   
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+          int j=1;
+        while(j<=n-i+1)
+        {
+            cout<<"*";
+            j++;
+        }
+
+        int space=1;
+
+        while(space<=i-1)
+        {
+            cout<<" ";
+            space++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+// ****
+//  ***
+//   **
+//   *  
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+          
+
+        int space=1;
+
+        while(space<=i-1)
+        {
+            cout<<" ";
+            space++;
+        }
+        int j=1;
+        while(j<=n-i+1)
+        {
+            cout<<"*";
+            j++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+// 1111
+//  222
+//   33
+//   4
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+          
+
+        int space=1;
+
+        while(space<=i-1)
+        {
+            cout<<" ";
+            space++;
+        }
+        int j=1;
+        while(j<=n-i+1)
+        {
+            cout<<i;
+            j++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+//   1
+//   22
+//  333
+// 4444
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+          
+
+        int space=n-i;
+
+        while(space)
+        {
+            cout<<" ";
+            space--;
+        }
+        int j=1;
+        while(j<=i)
+        {
+            cout<<i;
+            j++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+// 1234
+//  234
+//   34
+//   4
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+          
+
+        int space=1;
+
+        while(space<=i-1)
+        {
+            cout<<" ";
+            space++;
+        }
+        int j=1;
+        while(j<=n-i+1)
+        {
+            cout<<i+j-1;
+            j++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+//   1
+//   23
+//  456
+// 78910
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+      int a=1;
+    while(i<=n)
+    {
+          
+        int space=n-i;
+
+        while(space)
+        {
+            cout<<" ";
+            space--;
+        }
+        int j=1;
+        while(j<=i)
+        {
+            cout<<a;
+            a++;
+            j++;
+        }
+        
+        cout<<endl;
+        i++;
+    }
+}
+
+
+
+//   1
+//   121
+//  12321
+// 1234321
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+     
+    while(i<=n)
+    {
+          
+        int space=n-i;
+             int a=1;
+        while(space)
+        {
+            cout<<" ";
+            space--;
+        }
+        int j=1;
+        while(j<=i)
+        {
+            cout<<a;
+            a++;
+            j++;
+        }
+        
+        int k=i-1;
+        while(k>0)
+        {
+            cout<<k;
+            k--;
+        }
+        cout<<endl;
+        i++;
+    }
+}
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;  // Input the number of rows
+    
+    int i = n;
+    while (i >= 1) {
+        // Print increasing numbers from 1 to i
+        int j = 1;
+        while (j <= i) {
+            cout << j;
+            j++;
+        }
+
+        // Print middle spaces or stars (two spaces or one star)
+        if (i == n) {
+            cout << " ";  // First row with one space
+        } else {
+            cout << "* ";  // Other rows with a star and space
+        }
+
+        // Print decreasing numbers from i to 1
+        j = i;
+        while (j >= 1) {
+            cout << j;
+            j--;
+        }
+
+        cout << endl;  // Move to the next row
+        i--;  // Decrease the row count
+    }
+
+    return 0;
+}
+
+
